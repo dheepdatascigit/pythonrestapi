@@ -13,6 +13,6 @@ app = connex_app.app
 app.config["SQLALCHEMY_DATABASE_URI"] = f"sqlite:///{basedir / 'people.db'}"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
-dd = SQLAlchemy(app)
+db = SQLAlchemy(app)
 ma = Marshmallow(app)
 
